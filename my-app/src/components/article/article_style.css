@@ -1,0 +1,26 @@
+section#articles img {
+    width: 275px;
+    border-radius: 5px;
+}
+
+article {
+    display: flex;
+    gap: 1rem;
+}
+
+article h2 {
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+article h3 {
+    margin-bottom: 2rem;
+    color: #8695a4;
+    font-weight: 600;
+}
+
+article p {
+    color: #8695a4;
+    font-size: 15px;
+}
+
