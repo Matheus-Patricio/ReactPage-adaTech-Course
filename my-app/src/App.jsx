@@ -44,7 +44,7 @@ class App extends React.Component {
         <Article
                         
             thumbnail = {hubble}
-            title='DEFEITO ESTRUTURAL OBRIGA APOSENTADORIA DO TELESCÓPIO HUBBLE,'
+            title='DEFEITO ESTRUTURAL OBRIGA APOSENTADORIA DO TELESCÓPIO HUBBLE'
             provider='NASA'
             description='A redução de funções do telescópio é devido a um defeito em um dos três giroscópios que controlam a direção. A ferramenta está com instabilidade nos últimos meses, o que ocasionou episódios sem pausa de “modo de segurança”. O mais recente aconteceu no dia 24 de maio.'/>
 
