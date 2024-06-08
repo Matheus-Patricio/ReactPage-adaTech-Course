@@ -14,7 +14,6 @@ article h2 {
 }
 
 article h3 {
-    margin-bottom: 2rem;
     color: #8695a4;
     font-weight: 600;
 }
@@ -24,3 +23,26 @@ article p {
     font-size: 15px;
 }
 
+button{
+    height: 25px;
+    width: 60px;
+    font-size: 12px;
+    border: solid 2px;
+    border-radius: 12px;
+    background: #2d3143;
+    border-color: #c390d0;
+    color: #c390d0;
+}
+
+button:hover {
+    border-color: #e694fa;
+    color: #e694fa;
+    transition: all ease-in 0.3s;
+}
+
+article .secondary {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    align-items: center;
+}
