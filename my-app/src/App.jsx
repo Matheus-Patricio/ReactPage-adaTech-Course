@@ -1,6 +1,6 @@
 import './App.css';
 
-import logoImg from './assets/imgs/meteorite.png'
+
 import NavBar from './components/navBar/navBar';
 import './styles/App.css'
 import { Article } from './components/article/Article';
@@ -16,6 +16,8 @@ import React from 'react'
 
 //componente em classe no React é um componente que
 //herda a classe React e retorna HTML pelo render.
+
+//componente funcional é uma função que retorna HTML.
 
 class App extends React.Component {
 
@@ -51,7 +53,7 @@ class App extends React.Component {
         <Article
 
             thumbnail = {planetqueue}
-            title='FILA DE PALANETAS" PODE SER OBSERVADA A OLHO NU NESTA SEMANA.'
+            title='"FILA DE PALANETAS" PODE SER OBSERVADA A OLHO NU NESTA SEMANA.'
             provider='NASA'
             description='A partir dessa semana, uma formação curiosa começa a se tornar visível no céu da madrugada. Mais ou menos a partir das 05:30 da manhã, todos os planetas “clássicos”, aqueles visíveis a olho nu e conhecidos da humanidade há milênios, estarão visíveis no céu ao mesmo tempo. E o interessante disso tudo é que eles todos estarão perfilados quase numa linha reta, na verdade um arco, cortando o céu da direção leste para a direção oeste. Isso não acontece por acaso, todos os planetas do Sistema Solar estão confinados no plano do sistema, que na perspectiva de quem está na Terra parece ser uma estreita faixa no céu.' />
 

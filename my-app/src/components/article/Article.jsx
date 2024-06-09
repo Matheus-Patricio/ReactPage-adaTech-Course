@@ -2,36 +2,33 @@ import React from 'react'
 import './article_style.css'
 
 
-export class Article extends React.Component {
-    constructor(){
-        super()
-        this.state = {reader: false}
-    }
-    altState = () => {
-        this.setState({reader: !this.state.reader})
+export function Article({title, state, provider, description, thumbnail}) {
+    state = {reader: false}
+    const AltState = () => {
+        this.setState({reader: !state.reader})
     }
 
 
-    render() {
+    
         return (
             <article>
-                 <img src={this.props.thumbnail} alt={this.props.title} />
+                 <img src={thumbnail} alt={title} />
                  <div className="articleText">
 
-                    <h2>{this.props.title}</h2>
+                    <h2>{title}</h2>
                     <div className="secondary">
-                        <h3>{this.props.provider}</h3>
+                        <h3>{provider}</h3>
 
                         <button
-                        onClick={this.altState}>{this.state.reader ? "Lida" : "Não Lida"}
+                        onClick={AltState}>{state.reader ? "Lida" : "Não Lida"}
                         </button>
                     </div>
-                    <p>{this.props.description}</p>
+                    <p>{description}</p>
                  </div>
             </article>
         )
     }
-}
+
 
 
 /* 
