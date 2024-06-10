@@ -1,13 +1,10 @@
+import { useState } from 'react'
 import React from 'react'
 import './article_style.css'
 
 
 export function Article({title, state, provider, description, thumbnail}) {
-    state = {reader: false}
-    const AltState = () => {
-        this.setState({reader: !state.reader})
-    }
-
+    const [reader, setReader] = useState(false)
 
     
         return (
@@ -20,7 +17,8 @@ export function Article({title, state, provider, description, thumbnail}) {
                         <h3>{provider}</h3>
 
                         <button
-                        onClick={AltState}>{state.reader ? "Lida" : "Não Lida"}
+                        onClick={() => {
+                            setReader(!reader)}}>{reader ? "Lida" : "Não Lida"}
                         </button>
                     </div>
                     <p>{description}</p>
