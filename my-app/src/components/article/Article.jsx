@@ -3,7 +3,7 @@ import React from 'react'
 import './article_style.css'
 
 
-export function Article({title, state, provider, description, thumbnail}) {
+export function Article({title, provider, description, thumbnail}) {
     const [reader, setReader] = useState(false)
 
     
